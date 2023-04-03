@@ -680,7 +680,7 @@ class Connector(Handler):
 
         pass
 
-    def __init__(self, client:str='', addr:str='', port:int=0):
+    def __init__(self, client:str='', addr:str='127.0.0.1', port:int=0):
         self.client = client
         self.executor = Connector.BatchExecutor(self)
         addr = addr if addr else ''
